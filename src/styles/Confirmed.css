@@ -1,0 +1,27 @@
+.confirmed_page{
+    --color1: rgb(218, 218, 218);
+    --color2: rgb(120, 120, 120);
+    --color3: #a1761f;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color1);
+}
+
+.text{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 40%;
+    top: 20%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.confirmation_header, .confirmation_email, .spam{
+    display: block;
+    width: 100%;   
+    text-align: center;
+    color: var(--color3);
+}
+

@@ -1,0 +1,320 @@
+.checkout{
+    height: 100vh;
+    width: 99.2vw;
+    --color1: rgb(218, 218, 218);
+    --color2: rgb(120, 120, 120);
+    --color3: #a1761f;
+}
+
+.chekout_header{
+    width: 100%;
+    position: absolute;
+    height: 7vh;
+    text-align: center;
+}
+
+.midlertidig-logo_kasse{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    top: 1.2vh;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: var(--color3);
+}
+
+.chekout_title{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    height: 5vh;
+    width: 10vw;
+    top: 1.2vh;
+    left: 43vw;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: var(--color3);
+}
+
+.confirm_order{
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 96%;
+    left: 1.7%;
+    top: 7.3vh;
+    background-color: var(--color1);
+    box-shadow: 0px 0px 19px 5px var(--color2);
+    -webkit-box-shadow: 0px 0px 19px 5px var(--color2);
+    -moz-box-shadow: 0px 0px 19px 5px var(--color2);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+
+.form{
+    position: absolute;
+    display: grid;
+    height: 85%;
+    width: 60%;
+    left: calc(1% - 3px);
+    border-right-color: var(--color2);
+    border-right-width: 3px;
+    border-right-style:solid;
+}
+
+.order{
+    position: absolute;
+    display: block;
+    height: 85%;
+    width: 39%;
+    left: 61%;
+}
+.hele_order{
+    position: absolute;
+    display: block;
+    height: 84%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 19px 5px var(--color2);
+    -webkit-box-shadow: 0px 0px 19px 5px var(--color2);
+    -moz-box-shadow: 0px 0px 19px 5px var(--color3);
+}
+
+
+
+
+.navn::placeholder, .emailen::placeholder, .tlf::placeholder, .country::placeholder, .zip_code::placeholder, .city::placeholder, .adresse::placeholder{
+    text-align: center;
+    color:var(--color3);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navn:focus-visible, .emailen:focus-visible,.tlf:focus-visible,.country:focus-visible,.zip_code:focus-visible,.city:focus-visible, .adresse:focus-visible{
+    font-size: 1.1em;
+    font-weight: 500;
+    color:var(--color3);
+    background-color: var(--color1);
+    box-shadow: 0px 0px 12px 4px var(--color3);
+    -webkit-box-shadow: 0px 0px 12px 4px var(--color3);
+    -moz-box-shadow: 0px 0px 12px 4px var(--color3);
+}
+
+.navn:focus-visible::placeholder, .emailen:focus-visible::placeholder,.tlf:focus-visible::placeholder,.country:focus-visible::placeholder,.zip_code:focus-visible::placeholder,.city:focus-visible::placeholder, .adresse:focus-visible::placeholder{
+    font-weight: 0px;
+}
+
+
+.form_btn_div{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 90%;
+    height: 9%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_btn{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width:25%;
+    color: var(--color1);
+    background-color: var(--color3);
+    font-size: 1.2em;
+    font-weight: 550;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+
+.form_btn:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--color3);
+    border-style: solid;
+    cursor: pointer;
+}
+
+
+.order_header{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 3vh;
+    text-align: center;
+    font-size: 1.45em;
+    color: var(--color3);
+}
+
+
+.fyll{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 35%;
+    font-size: 1.35em;
+    color: var(--color3);
+}
+
+.calculated{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+    font-size: 1.35em;
+    color: var(--color3);
+}
+
+
+
+.single_order{
+    position:relative;
+    display: block;
+    height: 13%;
+    margin-top: 2%;
+    top: 20%;
+    box-shadow: 0px 0px 7px 2px var(--color2);
+    -webkit-box-shadow: 0px 0px 7px 2px var(--color2);
+    -moz-box-shadow: 0px 0px 7px 2px var(--color2);
+}
+
+.single_inf, .liten_pluss, .shipping{
+    color: var(--color3);
+    font-weight: 450;
+}
+.single_inf{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.liten_pluss{
+    position: absolute;
+    left: 10%;
+}
+
+
+.shipping{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.total_order{
+    position:relative;
+    display: block;
+    height: calc(13% - 7px);
+    top: 20%;
+    border-top-width: 6px;
+    border-top-style:double;
+    border-top-color: var(--color3);
+}
+
+.total_price{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #a1761f;
+    font-size: 1.3em;
+    height: 10%;
+}
+
+
+.payment_btn_chekout{
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    top: 89%;
+    background-color: var(--color3);
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border-color: var(--color3);
+    border-style: solid;
+    z-index: 5;
+}
+
+.payment_text{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--color1);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    z-index: 6;
+}
+
+.payment_text:hover{
+    color: var(--color3);
+}
+
+
+.payment_btn_chekout:hover{
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+.checkout_pil{
+    display: none;
+    z-index: -1;
+    background-color: var(--color1);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 90%;
+}
+
+@media screen and (max-width: 550px) {
+    .confirm_order{
+        overflow-y: scroll;
+    }
+    .form{
+        position: relative;
+        height: 95%;
+        width: 100%;
+        border-width: 0px;
+    }
+    .order{
+        position: relative;
+        width: 100%;
+        left: 0px;
+    }
+    .form_btn{
+        width: 50%;
+    }
+    .checkout_pil{
+        display:block;
+        animation: checkout_pil_anim 0.7s 1000;
+        z-index: 4;
+    }
+
+    @keyframes checkout_pil_anim {
+        0%{
+            transform: translateY(-5vh);
+        }
+        50%{
+            transform: translateY(5vh);
+        }
+        100%{
+            transform: translateY(-5vh);
+        }            
+    }
+}
+  

@@ -1,0 +1,224 @@
+/*.navbarbak {
+    --color1: rgba(23, 23, 23, 0.934);
+    --color2: rgba(94, 0, 0, 0.897);
+    --color3: #ffb013;
+    --navheight: calc(7vh + 3px);
+    --navstoffheight: 7vh;
+    --sidecartheight: 40vh;
+    --sidecartwidth: 50vw;
+    margin: 0em;
+    padding: 0em;
+    position: fixed;
+    height: var(--navheight);
+    width: 100vw;
+    background-image: linear-gradient(to top, rgb(224, 224, 224), rgba(0,0,0,1));
+    z-index: 2;
+}*/
+  
+.navbar {
+    --color1: rgb(218, 218, 218);
+    --color2: rgb(120, 120, 120);
+    --color3: #a1761f;
+    margin: 0em;
+    padding: 0em;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+  
+.logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    height: 7vh;
+    width: 92vw;
+    z-index: 2;
+    align-items: center;
+    z-index: 1;
+}
+  
+  
+.midlertidig-logo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 10vw;
+    font-weight: 700;
+    font-size: 4vh;
+    color: var(--color3);
+    z-index: 5;
+}
+  
+.cart {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 7vh;
+    width: 7vw;
+    float: right;
+    z-index: 2;
+}
+  
+.cart-div {
+    margin: 0;
+    padding: 0;
+    width: 9vw;
+    z-index: 2;
+}
+
+.cart-svg{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -0.5vh;
+    z-index: 3;
+    z-index: -4;
+}
+  
+.cart-tall {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 28%;
+    top: 38%;
+    color: var(--color3);
+    text-align: center;
+    font-size: 4vh;
+}
+  
+.cart:hover {
+    cursor: pointer;
+}
+  
+  
+  
+@keyframes cart {
+  
+    25% {
+      transform: rotateZ(-30deg);
+    }
+  
+    75% {
+      transform: rotateZ(30deg);
+    }
+  
+}
+
+
+@media screen and (max-width: 376px) {
+    .midlertidig-logo{
+        font-size: 1.1em;
+    }
+    .cart-tall{
+        font-size: 1.1em;
+        top: 3vh;   
+     }
+    .cart{
+        width: 13vw;
+        bottom: 1.5vw;
+        left: 2vw;
+    }
+}
+
+@media screen and (max-width: 391px) and (min-width: 376px) {
+    .midlertidig-logo{
+        font-size: 1.2em;
+    }
+    .cart-tall{
+        font-size: 1.2em;
+        top: 3.1vh;
+    }
+    .cart{
+        width: 15vw;
+        bottom: 1.7vw;
+        left: 1.6vw;
+    }  
+  
+}
+
+
+@media screen and (max-width: 428px) and (min-width: 391px) {
+    .midlertidig-logo{
+        font-size: 1.2em;
+    }
+    .cart-tall{
+        font-size: 1.2em;
+        top: 3.1vh;
+    }
+    .cart{
+        width: 14vw;
+        bottom: 2vw;
+        left: 1.6vw;
+    }  
+}
+
+@media screen and (max-width: 550px) and (min-width: 428px) {
+    .midlertidig-logo{
+        font-size: 1.2em;
+    }
+    .cart-tall{
+        font-size: 1.2em;
+        top: 3.1vh;
+    }
+    .cart{
+        width: 14vw;
+        bottom: 2vw;
+        left: 1.6vw;
+    }  
+}
+
+
+@media screen and (max-width: 770px) and (min-width: 550px) {
+    .midlertidig-logo{
+        font-size: 1.4em;
+    }
+    .cart-tall{
+        font-size: 1.4em;
+        top: 3.3vh;
+    }
+    .cart{
+        width: 10vw;
+        bottom: 2vw;
+        left: 2vw;
+    }  
+}
+
+@media screen and (max-width: 821px) and (min-width: 770px) {
+    .midlertidig-logo{
+        font-size: 1.5em;
+    }
+    .cart-tall{
+        font-size: 1.5em;
+        top: 3.2vh;
+        right: 0.1vw;
+    }
+    .cart{
+        width: 9.5vw;
+        bottom: 1.3vw;
+        left: 1.7vw;
+    }  
+  
+}
+
+@media screen and (max-width: 950px) and (min-width: 821px) {
+    .midlertidig-logo{
+        font-size: 1.8em;
+    }
+    .cart-tall{
+        font-size: 1.7em;
+        top: 3.2vh;
+    }
+    .cart{
+        width: 10vw;
+        bottom: 1vw;
+        left: 2vw;
+    }  
+  
+}
+
+

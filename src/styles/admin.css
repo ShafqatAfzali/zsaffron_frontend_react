@@ -1,0 +1,28 @@
+.loginn-btn{
+    position: absolute;
+    height: 4vh;
+    width: 10vw;
+    top: 50vh;
+    left: 45vw;
+    background-color: var(--color3);
+  }
+  
+  .loginn-txt{
+    position: absolute;
+    font-size: 0.8em;
+    top: 47vh;
+    left: 48vw;
+  }
+  .loginn-tx:hover{
+    cursor: pointer;
+  }
+  #navnet{
+    position: absolute;
+    top: 43vh;
+    left: 43vw;
+  }
+  #pass{
+    position: absolute;
+    top: 46vh;
+    left: 43vw;
+  }

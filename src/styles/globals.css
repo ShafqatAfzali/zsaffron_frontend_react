@@ -1,0 +1,137 @@
+:root {
+  margin: 0;
+  padding: 0;
+  --color1: rgb(218, 218, 218);
+  --color2: #787878;
+  --color3: #a1761f;
+  --navheight: calc(7vh + 3px);
+  --navstoffheight: 7vh;
+  --sidecartheight: 40vh;
+  --sidecartwidth: 50vw;
+}
+
+
+
+body {
+  padding: 0em;
+  margin: 0em;
+}
+
+
+.hoved {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  user-select: none;
+  align-items:flex-end;
+  justify-content: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 3),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 3));
+}
+
+.video {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.pil_ned_lenke{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.produkt_pil{
+  width: 100%;
+  text-align: center;
+  color: var(--color1);
+  font-size: 1em;
+}
+
+.cheap, .fast, .easy{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 4.2em;
+  font-weight: 350;
+  color: var(--color1);
+  z-index: -1;
+}
+.cheap{
+  animation: cheap 1.5s 1;
+  bottom: 60vh;
+}
+@keyframes cheap {
+  0%{
+    transform: translateY(-60vh);
+  }
+}
+
+.easy{
+  animation: easy 1.5s 1;
+  bottom: 45vh;
+}
+@keyframes easy {
+  0%{
+    transform: translateY(-70vh);
+  }
+}
+
+.fast{
+  animation: fast 1.5s 1;
+  bottom: 30vh;
+}
+@keyframes fast {
+  0%{
+    transform: translateY(-70vh);
+  }
+  
+}
+
+
+@keyframes pil_ned {
+  0%{
+    transform: translateY(-5vh);
+  }
+  50%{
+    transform: translateY(0vh);
+  }
+  100%{
+    transform: translateY(-5vh);
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .produkt_pil{
+    display: none;
+  }
+  .cheap, .fast, .easy{
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 821px) and (min-width: 770px) {
+  .produkt_pil{
+    font-size: 0.35em;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 821px) {
+  .produkt_pil{
+    font-size: 0.35em;
+  }
+}
